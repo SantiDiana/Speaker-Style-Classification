@@ -1,0 +1,17 @@
+In the AUDIOS folder, we have 3 different folders: singing, speech and speech and singing.
+In SINGING, we have the sung audios from NUS sung and spoken lyrics.
+In SPEECH, we have the spoken audios from NUS sung and spoken lyrics.
+In SPEECH AND SINGING, we have the BERTSO audios, which contain both sung and spoken audios. Then it will contain 
+my own database.
+
+156067 sung. 26.01 minutos de audios en los que se canta en la NUS Database.
+56530 spoken. 9.43 minutos de audios en los que se habla en la NUS Database.
+
+#164918 muestras, lo que son 27.48 minutos de dataset. De esas muestras, 119123, es decir, 19.85 minutos es estricto cantado, 13747, es decir, 2.29min es estricto hablado, y 32048, es decir, 5.34min es estricto silencio.
+
+#Suponiendo una distribución igual de silencio en los fragmentos hablados y cantados (no es verdad, pero es una aproximación), tenemos 24.63 minutos de cantado y 2.85 minutos de hablado en el dataset de bertso.
+
+
+Por lo tanto, sumando los 2 dataset del paper, tenemos 62.91 minutos de dataset. De esos, 50,64 son cantados y 12.18 son hablados. 
+
+

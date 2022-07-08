@@ -1,0 +1,8 @@
+numpy==1.21
+soundfile
+sklearn
+pickle
+matplotlib
+librosa
+os
+sys

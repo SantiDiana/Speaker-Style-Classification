@@ -1,0 +1,8 @@
+f0_cents_complete_with_silence. 223150 muestras de f0_Cents de todo el DATASET. Sirve para el test final
+labels_complete_with_silence. 223150 muestras de todos los labels con silencio incluido. Sirve para el test final.
+labels_whole_NUS. 3910 muestras de 0.5s sin tener en cuenta los silencios las muestras que solo son silencio, es decir que los 50 frames de la ventana son silencio.
+labels_whole_NUS_with_silence. 4463 muestras de 0.5s teniendo en cuenta absolutamente todos los silencios. 
+vector_porcentajes_notes_completa. 3910 muestras del valor de porcentaje de notas solo para los etiquetados como hablado o cantado del dataset.
+vector_porcentajes_notes_completa_with_silence. 4463 muestras de 0.5s teniendo en cuenta todos los silencios. No sé si lo utilizo en algún momento.
+vector_porcentajes_voiced_completa. 3910 muestras del valor de porcentaje de voiced segments solo para los etiquetados como hablado o cantado del dataset.
+vector_porcentajes_voiced_completa_with_silence. 4463 muestras de 0.5s teniendo en cuenta todos los silencios. No sé si lo utilizo en algún momento. 

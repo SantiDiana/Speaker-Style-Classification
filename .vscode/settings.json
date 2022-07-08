@@ -1,0 +1,4 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.envFile": "${workspaceFolder}/Main/dev.env" 
+}

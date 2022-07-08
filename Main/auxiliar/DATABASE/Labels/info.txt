@@ -1,0 +1,5 @@
+El labelling de los enventanados da 0 solo si toda la ventana son ceros. Si la ventana hay un solo frame que se
+cataloga como 1 o 2, se le pone esa etiqueta a la ventana, de manera que luego los que solo sean voiced de ese
+segmento se cataloguen de esa manera.
+
+Tengo también en esta carpeta todos los labels de bertso juntos seguidos para hacer el entrenamiento de la SVM.
