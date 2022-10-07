@@ -12,7 +12,7 @@ The speech and singing voice discriminator is a complex algorithm that contains 
 
 Every part of the algorithm has been trained and tested with two different datasets. For the training, [Bertso Dataset](https://drive.google.com/drive/folders/17OyEclSBwmxJMEjnFbB67iY5Q5UzTiaF) has been used. It has been manually labelled by Santiago Diana Sánchez. Then, for testing, [NUS Sung and Spoken Lyrics](https://drive.google.com/drive/folders/1HX25GDzPfp1bhFWhYrZIk-oY3A0Q_wgp) has been used and also manually labelled. The training and testing of the Voice Activity Detector, Support Vector Machine and final main script have been done with this two datasets.
 
-
+You can find the Bachelor Thesis explaining the whole topic in this link: [TFG Santiago Diana](https://drive.google.com/drive/search?q=tfg)
 ![Diagram](img/diagram.png)
 
 
@@ -26,7 +26,7 @@ You will get as response a vector called decision_vector, which is a vector that
 0 means silence, 1 means speech and 2 means singing voice. The decision is made by applying a frame window of 10ms, so each element of the decision_vector corresponds to a 10ms frame of the input audio file. Once you have that vector, is up to you what to do with it. 
 
 # Explanation of the different modules
-First of all, VAD.py contains the Voice Activity Detector. Then, evaluate_pitch.py, pitch_extractor.py and extractors folder contain the way to extract the f0 of every frame of the input audio file. Then, NoteDetection.py implements the Note Detection Algorithm over the f0 signal. NumberFramesPercentage.py and NotePercentage.py contain both calculations of the parameters that are used in order the make the final decision. Finally, SVM.py contains the decision function.
+First of all, VAD.py contains the Voice Activity Detector. Then, f0 extraction has been performed, in order to maintain the company's privacy, with librosa. It works worse and slower than the f0_extraction algorithm that Voicemod implemented. Then, NoteDetection.py implements the Note Detection Algorithm over the f0 signal. NumberFramesPercentage.py and NotePercentage.py contain both calculations of the parameters that are used in order the make the final decision. Finally, SVM.py contains the decision function.
 
 Parameters_silence_VAD.sav and Parameters_voice_VAD.sav contain the Voice Activity Detector parameters once trained with Bertso Dataset. finalized_model.sav contains SVM training once trained with Bertso Dataset. 
 

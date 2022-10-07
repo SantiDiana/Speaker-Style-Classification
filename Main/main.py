@@ -6,7 +6,6 @@ import NumberFramesPercentage
 import SVM
 import numpy as np
 import pickle
-import pitch_extractor
 import librosa
 
 
@@ -25,11 +24,10 @@ def main(path):
     #VAD finished.
     hop_size = int(0.01 * fs)
     #F0 detection algorithm. 
-    p_e=pitch_extractor.PitchExtractor()
-    f0_curve,confidence,_=p_e.extract_as_hz(audio_test, fs, hop_size, 'DNN', audio_filepath='', frame_size=hop_size)
-    # f0_curve,confidence=evaluate_pitch.f0_extraction('Main/audio')
+    f0_curve,voiced_flag,voiced_probs=librosa.pyin(audio_test,fmin=librosa.note_to_hz('G1'),fmax=librosa.note_to_hz('C7'),frame_length=hop_size)
+    print(len(f0_curve),len(vector_binary_test))
     f0_curve=f0_curve[1:len(f0_curve)]
-    confidence=confidence[1:len(confidence)]
+
 
 
     f0_curve_treated=evaluate_pitch.f0_treatment(f0_curve,vector_binary_test)   
